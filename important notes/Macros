@@ -1,0 +1,8 @@
+#define PI 3.14
+
+Another way would have been making a variable and giving
+it value but that would consume space
+So instead of that we use Macros
+
+Macros dont consume space and also cat be changed so the values cannot be
+mistakingly altered.

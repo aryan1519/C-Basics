@@ -1,0 +1,96 @@
+1.STRING LENGTH
+
+strlen() is used which is part of the cstring library
+
+SYNTAX
+strlen(string_name)
+//////////////////////////////////////////////////
+
+2.COMPARE TWO STRINGS
+
+strcmp()is used which part of the cstring library
+
+SYNTAX
+strcmp(string1,string2)
+
+this returns 0 if true(i.e. for equal) and anything else if false(i.e. for not equal)
+
+this compares each char of ec=ach string
+Eg
+string 1 = abcd
+string 2 = acbd
+
+it starts with i=0 for each string
+both are a
+now it performs subtarction on chars
+
+i.e. a-a
+  or 97-97=0
+  if 0 then it continues as the chars are equal
+
+  then i++
+  i.e. i=1 for both chars
+
+  now
+      b-c
+  or  98- 99=-1
+  not 0 thus not equal
+  hence the string are not equal
+//////////////////////
+
+3.STRING COPY
+
+strcpy() is used of the cstring library
+
+SYNTAX
+strcpy(destination_string,source_string)
+
+Eg a= abc
+   b= def
+   strcpy(a,b)
+   cout<<a;
+   a= def
+
+   it copies the null character as well
+
+
+  WE CAN ALSO DO THE FOLLOWING
+
+  strcpy(des_string,"hello")
+   //////////////////////////////////////////////////
+
+  4. STRING COPY UPTO A FEW CHARS
+
+  strncpy() is used which is a part of the cstring libaray
+
+
+  SYNTAX
+
+  strncpy(destination_string,source_string,n)
+
+  n is the number of character we want to copy
+
+  Eg.
+
+  string_1 = abcdef
+  string_2 = ghi
+
+  strncpy(string_1,string_2,3)
+
+  cout<<string_1;
+
+  string_1= ghidef
+
+  strncpy does not copy the \0 chars
+
+now if the source_string is not as long as the number
+of chars we want to copy to the destination_string
+then it copies null for rest of the characters
+
+eg string_1 = abcd
+   string_2 = xy
+   strncpy(string_1,string_2,4)
+   cout<<string_1;
+   string_1 = xy
+
+   the rest two chars are null characters

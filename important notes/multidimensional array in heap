@@ -1,0 +1,20 @@
+creating multidimensional arrays in heap
+
+eg creating a 10*20 2-D array
+
+int **p = new int *[10];
+
+for(int i=0;i<10;i++)
+{
+
+p[i]=new int[20];
+
+}
+//////////////
+Deallocation
+
+for(int i=0;i<m;i++)
+{
+delete []p[i];
+}
+delte []p;

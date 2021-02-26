@@ -1,0 +1,20 @@
+inline int max(int a,int b)
+{
+return (a>b)?a:b;
+}
+int main()
+{
+int a,b;
+cin>>a>>b;
+int c= max(a,b);
+}
+
+
+here if the function wasnt inline then copy of a,b would have been formed
+in the function.
+So to avoid this we make the function inline
+Now during compilation when the compiler sees the function call
+it copies the function definition there and no copy variables have to be formed
+
+inline functions are used when the function definition is not
+long and is usually of one line only.
